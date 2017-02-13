@@ -5,7 +5,9 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char font[] = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static char font[] = "Meslo LG S:style=Regular:size=9:antialias=true:autohint=false:lcdfilter=lcddefault:hintstyle=hintnone:rgba=rgb"
+/*"Liberation Mono:pixelsize=12:antialias=true:autohint=true"*/
+;
 static int borderpx = 2;
 
 /*
@@ -84,31 +86,23 @@ static unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
-
-	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
-
-	[255] = 0,
-
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
+	/* solarized light */
+	"#eee8d5",	/*   0: black	 */
+	"#dc322f",	/*   1: red	 */
+	"#859900",	/*   2: green	 */
+	"#b58900",	/*   3: yellow	 */
+	"#268bd2",	/*   4: blue	 */
+	"#d33682",	/*   5: magenta	 */
+	"#2aa198",	/*   6: cyan	 */
+	"#073642",	/*   7: white	 */
+	"#fdf6e3",	/*   8: brblack	 */
+	"#cb4b16",	/*   9: brred	 */
+	"#93a1a1",	/*  10: brgreen	 */
+	"#839496",	/*  11: bryellow */
+	"#657b83",	/*  12: brblue	 */
+	"#6c71c4",	/*  13: brmagenta*/
+	"#586e75",	/*  14: brcyan	 */
+	"#002b36",	/*  15: brwhite	 */
 };
 
 
@@ -116,10 +110,10 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-static unsigned int defaultfg = 7;
-static unsigned int defaultbg = 0;
-static unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+static unsigned int defaultfg = 12;
+static unsigned int defaultbg = 8;
+static unsigned int defaultcs = 14;
+static unsigned int defaultrcs = 15;
 
 /*
  * Default shape of cursor
@@ -134,8 +128,8 @@ static unsigned int cursorshape = 2;
  * Default columns and rows numbers
  */
 
-static unsigned int cols = 80;
-static unsigned int rows = 24;
+static unsigned int cols = 120;
+static unsigned int rows = 48;
 
 /*
  * Default colour and shape of the mouse cursor
