@@ -1,3 +1,6 @@
+# Ignore main executable
+st
+
 # Object files
 *.o
 *.ko
