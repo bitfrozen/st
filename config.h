@@ -5,9 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char font[] = "Meslo LG S:style=Regular:size=9:antialias=true:autohint=false:lcdfilter=lcddefault:hintstyle=hintnone:rgba=rgb"
-/*"Liberation Mono:pixelsize=12:antialias=true:autohint=true"*/
-;
+static char font[] = "Meslo LG S:style=Regular:size=9:antialias=true:autohint=false:lcdfilter=lcddefault:hintstyle=hintnone:rgba=rgb";
 static int borderpx = 2;
 
 /*
